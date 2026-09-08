@@ -1,5 +1,5 @@
 #import <AltList/LSApplicationProxy+AltList.h>
-#import <Foundation/NSValue.h>
+#import <Foundation/Foundation.h>
 #import <MobileCoreServices/LSApplicationProxy.h>
 #import <MobileCoreServices/LSApplicationWorkspace.h>
 #import <RemoteLog.h>
@@ -17,6 +17,7 @@
 #import <objc/NSObjCRuntime.h>
 
 NSString *plusCirclePath();
+NSString *grabberPath();
 
 @interface SBSearchScrollView : UIScrollView
 @end

@@ -19,6 +19,7 @@ final class TweakPreferences {
 
 struct Settings: Codable {
     var enabled = true
+    var showAppLabels = true
     var fadeDuration = 0.2
     var fadeAmount = 0.3
     var iconMoveDuration = 0.5
@@ -26,4 +27,5 @@ struct Settings: Codable {
     var springInitialVelocity = 0.0
     var hapticFeedback = true
     var activationGestureDirection = "up"
+    var indicator = "none"
 }

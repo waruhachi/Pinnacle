@@ -17,6 +17,7 @@ class PinnacleIconView: SBIconView {
         setupCommonProperties(xDir: xDir, yDir: yDir, bundle: bundle, parentBundle: parentBundle, index: index)
 
         self.icon = fromIconView.icon
+        self.setAllowsLabelArea(TweakPreferences.shared.settings.showAppLabels)
 
         if isEditing {
             self.gestureRecognizers = []
@@ -34,9 +35,11 @@ class PinnacleIconView: SBIconView {
         self.init()
         setupCommonProperties(xDir: xDir, yDir: yDir, bundle: bundle, parentBundle: parentBundle, index: index)
 
-        let image = UIImage(contentsOfFile: plusCirclePath())
+        if placeholderImage == nil {
+            placeholderImage = UIImage(contentsOfFile: plusCirclePath())
+        }
 
-        let imageView = UIImageView(image: image)
+        let imageView = UIImageView(image: placeholderImage)
         imageView.frame = CGRect(x: 0, y: 0, width: 60, height: 60)
 
         imageView.isUserInteractionEnabled = true

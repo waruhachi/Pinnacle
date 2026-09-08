@@ -31,6 +31,7 @@ struct RootView: View {
 
             Section {
                 Toggle("Enabled", isOn: $preferenceStorage.isEnabled)
+                Toggle("Show App Labels", isOn: $preferenceStorage.showAppLabels)
             }
 
             Section {
@@ -41,10 +42,22 @@ struct RootView: View {
                 Picker("Gesture Direction", selection: $preferenceStorage.activationGestureDirection) {
                     Text("Up").tag("up")
                     Text("Down").tag("down")
+                    Text("Either").tag("both")
                 }.pickerStyle(.segmented)
 
             } header: {
                 Text("Gesture")
+            }
+            
+            Section {
+                Picker("Visual Indicator", selection: $preferenceStorage.indicator) {
+                    Text("None").tag("none")
+                    Text("Grabbers").tag("grabbers")
+                    //Text("App Previews").tag("apps")
+                }.pickerStyle(.segmented)
+
+            } header: {
+                Text("Indicator")
             }
 
             Section {
