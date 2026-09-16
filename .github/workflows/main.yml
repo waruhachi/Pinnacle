@@ -77,7 +77,7 @@ jobs:
               id: package_metadata
               shell: bash
               run: |
-                version=$(awk -F': *' '$1 == "Version" { print $2 }' layout/DEBIAN/control)
+                version=$(awk -F': *' '$1 == "Version" { print $2 }' control)
                 echo "version=$version" >> "$GITHUB_OUTPUT"
 
             - name: Download all DEBs
