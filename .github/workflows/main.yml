@@ -37,7 +37,7 @@ jobs:
                 echo "DEVELOPER_DIR=$(xcode-select -p)" >> $GITHUB_ENV
 
             - name: Set up Theos
-              uses: waruhachi/theos-action@v2.4.13
+              uses: waruhachi/theos-action@v2.5.0
               with:
                 theos-src: 'waruhachi/theos'
                 theos-branch: 'main'
