@@ -1,11 +1,11 @@
 import Foundation
-import libroot
+import roothide
 
 final class TweakPreferences {
     private(set) var settings: Settings!
     static let shared = TweakPreferences()
 
-    private let preferencesFilePath = jbRootPath("/var/mobile/Library/Preferences/dev.rugmj.pinnacleprefs.plist")
+    private let preferencesFilePath = jbroot("/var/mobile/Library/Preferences/dev.rugmj.pinnacleprefs.plist")
 
     func loadSettings() {
         if let data = try? Data(contentsOf: URL(fileURLWithPath: preferencesFilePath)),

@@ -1,5 +1,5 @@
 import SwiftUI
-import libroot
+import roothide
 import Comet
 
 struct SliderWithLabel: View {
@@ -108,7 +108,7 @@ struct RootView: View {
 
             Section {
                 Button(action: {
-                    try? FileManager.default.removeItem(atPath: jbRootPath("/var/mobile/Library/Pinnacle/stackData.plist"))
+                    try? FileManager.default.removeItem(atPath: jbroot("/var/mobile/Library/Pinnacle/stackData.plist"))
                 }) {
                     Text("Reset Data")
                         .foregroundColor(.red)

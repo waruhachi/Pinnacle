@@ -1,6 +1,6 @@
 import PinnacleC
 import Orion
-import libroot
+import roothide
 
 struct SpotlightHookGroup: HookGroup {}
 
@@ -38,7 +38,7 @@ func loadSettings() {
 var active: Bool = false
 var activeIconList: SBIconListView?
 
-private let stackDataPath = URL(fileURLWithPath: jbRootPath("/var/mobile/Library/Pinnacle/stackData.plist"))
+private let stackDataPath = URL(fileURLWithPath: jbroot("/var/mobile/Library/Pinnacle/stackData.plist"))
 
 private func getStackData() -> [String: [String]] {
     guard let data = try? Data(contentsOf: stackDataPath),

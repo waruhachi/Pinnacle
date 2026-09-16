@@ -1,9 +1,9 @@
 import Comet
 import Combine
-import libroot
+import roothide
 
 final class PreferenceStorage: ObservableObject {
-    static let registry: String = jbRootPath("/var/mobile/Library/Preferences/dev.rugmj.pinnacleprefs.plist")
+    static let registry: String = jbroot("/var/mobile/Library/Preferences/dev.rugmj.pinnacleprefs.plist")
 
     @Published(key: "enabled", registry: registry) var isEnabled: Bool = true
     @Published(key: "showAppLabels", registry: registry) var showAppLabels: Bool = true
