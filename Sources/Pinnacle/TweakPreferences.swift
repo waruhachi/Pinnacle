@@ -1,5 +1,4 @@
 import Foundation
-import roothide
 
 final class TweakPreferences {
     private(set) var settings: Settings!

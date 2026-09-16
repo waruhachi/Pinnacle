@@ -1,5 +1,4 @@
 import SwiftUI
-import roothide
 import Comet
 
 struct SliderWithLabel: View {

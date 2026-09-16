@@ -1,6 +1,5 @@
 import Comet
 import Combine
-import roothide
 
 final class PreferenceStorage: ObservableObject {
     static let registry: String = jbroot("/var/mobile/Library/Preferences/dev.rugmj.pinnacleprefs.plist")

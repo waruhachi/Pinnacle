@@ -1,6 +1,5 @@
 import PinnacleC
 import Orion
-import roothide
 
 struct SpotlightHookGroup: HookGroup {}
 
