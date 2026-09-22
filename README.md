@@ -14,6 +14,7 @@ A modern version of [Zenith](https://havoc.app/package/zenith) / [Apex](http://c
 - iPhone 13, 16.1
 - iPad Air 4, 16.1
 - iPhone 8, 16.5.1
+- iPhone 15, 17.2.1
 
 ## Refund Policy
 I'm more than happy to refund people who experience crashes or bugs which interrupt the core functionality of the tweak or impact other parts of ios without a way to fix them as long as an acceptable bug report is made first. Any refund requested within the first 48 hours of purchasing the tweak will be accepted no questions asked.
